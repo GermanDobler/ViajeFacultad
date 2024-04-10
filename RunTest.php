@@ -14,6 +14,10 @@ while (true) {
 
     switch ($opcion) {
         case 1:
+            if (isset($viaje)) {
+                echo "Ya se ha cargado información de un viaje.\n";
+                break;
+            }
             echo "Ingrese código del viaje: ";
             $codigo = trim(fgets(STDIN));
             echo "Ingrese destino: ";
